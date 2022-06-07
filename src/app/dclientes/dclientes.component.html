@@ -1,0 +1,20 @@
+<h2></h2>
+<table class="table table-striped">
+    <thead>
+        <tr class="tr">
+            <th class="hidden">CLIENTE ID</th>
+            <th>CEDULA</th>
+            <th>CLIENTE</th>
+            <th>EMAIL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="tr" *ngFor="let cliente of clientes">
+            <td class="hidden">{{cliente.id}}</td>
+            <td>{{cliente.cedula}}</td>
+            <td>{{cliente.name}}</td>
+            <td>{{cliente.email}}</td>
+
+        </tr>
+    </tbody>
+</table>
