@@ -19,7 +19,7 @@ export class AddClienteComponent {
   createCliente(): void {
     this.alldataService.createCliente(this.cliente)
         .subscribe( data => {
-        //  alert("Cliente creado exitosamente.");
+          alert("Cliente creado exitosamente.");
           this.router.navigate(['/clientes']);
         });
 
